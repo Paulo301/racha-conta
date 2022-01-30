@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:racha_conta/core/widgets/action_button.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class ScratchersScreen extends StatelessWidget {
+  const ScratchersScreen({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFF011627),
+      appBar: AppBar(
+        backgroundColor: const Color(0xFF2EC4B6),
+        centerTitle: true,
+        title: const Text("Raspadinhas"),
+      ),
       body: SafeArea(
         child: Center(
           child: Column(
@@ -28,7 +33,7 @@ class HomeScreen extends StatelessWidget {
                 child: ActionButton(
                   "Iniciar",
                   onPressed: () {
-                    Navigator.pushNamed(context, "/start");
+                    Navigator.pushNamed(context, "/scratchers");
                   },
                 ),
               )

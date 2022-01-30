@@ -2,5 +2,5 @@ import 'package:flutter/material.dart';
 import 'package:racha_conta/rachaconta_app.dart';
 
 void main(){
-  runApp(RachaContaApp());
+  runApp(const RachaContaApp());
 }
